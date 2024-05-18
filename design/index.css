@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+   margin:0px;
+   padding:0px;
+   box-sizing: border-box;
+  
+}
+:root{
+    --Very_Dark_Blue: hsl(243, 87%, 12%);
+    --Desaturated_Blue: hsl(238, 22%, 44%); 
+    --Accent-Bright_Blue: hsl(224, 93%, 58%);
+    --Moderate_Cyan: hsl(170, 45%, 43%);  
+    --Light_Grayish_Blue: hsl(240, 75%, 98%);
+    --Light_Gray: hsl(0, 0%, 75%);
+}
+body{
+    font-family:Open San , sans-serif;
+    /* "Raleway",
+        sans-serif; Open San
+     */
+}
+.main{
+    width: 100%;
+    height:100vh;
+    background-color: white;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 50px;
+    font-family: 'Raleway', sans-serif;
+    /* border: 2px solid black; */
+}
+.logo{
+    width: 180px;
+    
+}
+.links ul{
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    list-style-type: none;
+    color: var(--Very_Dark_Blue);
+}
+.link a{
+    text-decoration: none;
+    
+}
+/*--------------------------------------------------------------MEDIAQUERY_SECTION------------------------------------------------------*/
+
+
+@media screen and (max-width: 600px){
+    .header {
+        padding: 30px 20px;
+    
+    }
+    .logo {
+        width: 100px;
+            
+        }
+    .links ul {
+        gap: 20px;
+    
+        }
+
+}
+
+
+/*--------------------------------------------------------------SECOND_SECTION------------------------------------------------------------*/
+
+
+    
+.secondSection, .thirdSession{
+  /* border: 2px solid  red;  */
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  width: 100%;
+  margin: 0px 0px 100px 0px;
+
+}
+
+.secondSection{
+padding: 0px 50px 100px 50px;
+gap: 4rem;
+}
+.words{
+    width: 50%;
+    height:60% ;
+    padding: 0px 0px 50px 0px;
+    /* border: 2px solid black;*/
+} 
+.heading1 {
+    width: 29rem;
+    font-size: 31px;
+    font-family: "Raleway", sans-serif;
+    color: var(--Very_Dark_Blue);
+    margin: 0px 0px 15px 0px;
+    padding: 100px 0px 0px 0px;
+}
+
+.paragraph{
+    font-size: 15px;
+    width: 460px;
+    margin: 0px 0px 15px 0px;
+    line-height: 20px;
+    
+}
+.inputButton {
+    display: flex;
+    flex-direction: row;
+    width: 450px;
+    gap: 20px;
+    
+}
+
+.email{
+    width: 260px;
+    border: 1px solid var(--Light_Gray);
+    padding: 0.8rem;
+    overflow: hidden;
+    
+    
+}
+.email::placeholder {
+    font-size: 13px;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+.btn{
+    width: 140px;
+    font-size: 10px;
+    color: var(--Light_Grayish_Blue);
+    background-color: var(--Accent-Bright_Blue);
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.illustration-1{
+    width: 50%;
+    height: 130%;
+    /* border: 2px solid black; */
+    padding: 40px 0px 0px 0px;
+
+}
+
+.immage{
+    width: 100%;
+    height: 100%;
+}
+.curve{
+    background-image: url("./images/bg-curve-desktop.svg");
+    background-image: cover;
+    overflow: hidden;
+    /* border: 2px solid red;*/
+} 
+
+.curve1 {
+    display: none;
+    /* border: 2px solid red;*/
+}
+
+
+/*--------------------------------------------------------------MEDIAQUERY_SECTION------------------------------*/
+@media screen and (max-width: 600px) {
+.secondSection,.thirdSession {
+    /* border: 2px solid  red;  */
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+
+}
+.secondSection {
+    padding: 150px 20px 100px 20px;
+    text-align: center;
+    
+   
+}
+
+.words {
+    width: 100%;
+    padding: 0px 0px 50px 0px;
+    /* border: 2px solid black;*/
+}
+
+.heading1 {
+    width: 100%;
+    font-size: 31px;
+    margin: 0px 0px 15px 0px;
+    padding: 40px 0px 0px 0px;
+}
+    
+.paragraph {
+    font-size: 15px;
+    width: 100%;
+}
+
+.inputButton {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.email {
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+}
+
+.illustration-1{
+    width: 100%;
+    padding: 40px 20px 0px 20px;
+
+}
+
+.curve {
+    display: none;
+
+}
+
+ .curve1 {
+   display: block;
+   width: 100%;
+   margin-top: 200px;
+background-image: url("./images/bg-curve-desktop.svg");
+    background-image: cover;
+    overflow: hidden;
+    /* border: 2px solid red;*/
+}  
+}
+
+/*--------------------------------------------------------------THIRD_SECTION------------------------------------------*/
+.thirdSession{
+padding: 0px 50px;
+/* border: 2px solid red;  */
+background-color:var(--Light_Grayish_Blue);
+ height: 500px; 
+ gap: 50px;
+margin-top:-1.2rem ;
+
+}
+.word3{
+    width: 53%;
+    height: 100%;
+    /* border: 2px solid black; */
+
+}
+.heading2{
+    width: 550px;
+    padding: 40px 0px 0px 0px ;
+}
+.illustration-2 {
+    width: 48%;
+    padding: 40px 0px 0px 0px;
+    /* border: 2px solid black; 
+    */
+
+}
+/* illustration2-image */
+.image {        
+    width: 100%;
+    height: 70%;
+}
+.paragraph3{
+    width: 450px;
+}
+.paragraph4{
+    
+    color: var(--Moderate_Cyan);
+    display: inline;
+    /* border: 1px solid red; */
+    width: 130px;
+}
+.arrow{
+    /* border: 1px solid red; */
+    width: 14px;
+    height: 14px;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 170px;
+    /* border: 1px solid black;  */
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 8px;
+    box-shadow: 0px 0px 10px 10px rgb(241, 235, 235);
+    margin: 40px 0px 0px 0px;
+    border-radius: 5px;
+    font-family: Poppins;
+    
+}
+
+#quote{
+    width: 15px;
+    height: 15px; 
+    margin: 5px 0px 5px 0px;
+}
+.paragraphArrow{
+    border-bottom:1px solid var(--Moderate_Cyan);
+    width:135px;
+    
+}
+.paragraph5{
+    font-size: 14.5px;
+    line-height: 20px;
+    width: 270px;
+}
+.testimonial{
+    display: flex;
+    gap:7px;
+    margin: 12px 0px 0px 0px;
+}
+#testimonial{
+    width:25px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+.Brown > h5{
+    font-size: 11px;
+    font-weight: 800;
+
+}
+.Brown> p{
+    opacity:0.7;
+}
+/*--------------------------------------------------------------medi_SECTION------------------------------------------------------------*/
+@media screen and (max-width:600px) {
+.thirdSession {
+    padding: 0px 50px;
+    /* border: 2px solid red; */
+    margin-top: 300px;
+
+
+    }
+    
+}
+/*--------------------------------------------------------------FOUTH_SECTION------------------------------------------------------------*/
+.forthSession{
+    width: 100%;
+    height: 15rem;
+    background-color: var(--Desaturated_Blue);
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   gap: 5rem;
+   padding: 100px 70px 180px 70px;
+   margin-top:-100px;
+
+}
+.words4{
+   width:55%;
+   /* border: 2px solid red; */
+}
+
+.heading5{
+    font-size: 32px;
+    color: white;
+}
+.paragraph6 {
+    width: 410px;
+    color: white;
+
+}
+.words5{
+  width: 45%;
+   /* border: 2px solid rgb(18, 10, 10); */
+   display:flex;
+   flex-direction: column;
+   padding-top: 7.5rem;
+
+  
+   
+   
+}
+.paragraph6{
+  width: 410px;
+
+
+} 
+.forthEmail{
+    margin-bottom:20px;
+    padding:0.9rem;
+    width: 20rem;
+    overflow: hidden;
+}
+.forthBtn{
+  background-color:var(--Accent-Bright_Blue) ;
+  width: 16rem;
+  padding: 0.9rem;
+  font-size: 0.7rem;
+  outline: none;
+
+}
+
+
+/*--------------------------------------------------------------FOOTER_SECTION------------------------------------------*/
+.footer{
+    display: flex;
+    flex-direction: row;
+    padding: 5rem 50px 4rem;
+    background-color: var(--Very_Dark_Blue);
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+}
+
+.foter {
+    width: 250px;
+}
+
+#flyo {
+    width: 10rem;
+
+}
+
+
+.Phone {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin: 1rem 0 1rem;
+
+}
+
+.Phone>img {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.Phone>p {
+    width: 5rem;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.list {
+    list-style: none;
+    display: block;
+    padding: 4.5rem 0 0 0;
+    width: 20rem;
+    opacity: 0.6;
+}
+
+.list>li {
+    margin: 0 0 1rem 0;
+    font-size: 1.1 rem;
+    width: 100%;
+
+
+}
+
+.social {
+    display: flex;
+    gap: 0.5rem;
+    padding: 4.5rem 0 0 0;
+
+}
+
+.media {
+
+    border-radius: 50%;
+    border: 2px solid rgb(8, 3, 20);
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+/*-------------------------------MEDIA QUERIES FOR MOBILEVIEW_SECTION-----------------------------------------*/
